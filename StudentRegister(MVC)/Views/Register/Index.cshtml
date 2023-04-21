@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .menu{
+    width:80px;
+    margin:auto;
+    margin-top:60px;
+    border:None;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    #button{
+        width:65px;
+        border:None;
+        background-color:snow;
+    }
+    .getbutton{
+               color:darkSeaGreen;
+    }
+    .postbutton{
+                color:Green;
+    }
+     .putbutton{
+                color:Blue;
+    }
+     .deletebutton{
+                color:red;
+    }    
+</style>
+
+
+<div class="menu">
+<button id="button" class="getbutton" onclick="location.href='https://localhost:44393/register/get';">Get</button>
+<button id="button" class="postbutton" onclick="location.href='https://localhost:44393/register/post';">Add</button>
+<button id="button" class="putbutton" onclick="location.href='https://localhost:44393/register/put';">Edit</button>
+<button id="button" class="deletebutton" onclick="location.href='https://localhost:44393/register/delete';">Delete</button>
+</div>
+

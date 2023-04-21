@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Get";
+}
+
+@model IEnumerable<StudentRegister_MVC_.Models.Domains.Entities.Student>
+
+<style>
+    #button{
+        background-color:snow;
+        margin-left:1000px;
+        margin-top:5px;
+        border-color:black;
+        border:solid;
+    }
+    #head{
+        border-bottom-color:black;
+        border-bottom:5px;
+        border-bottom:solid;
+    }
+    .names{
+        border-bottom-color:black;
+        border-bottom:5px;
+        border-bottom:solid;
+    }
+</style>
+
+<ul>
+    <div id="list">
+
+        <pre><h4 id="head">Id | Name | Course | Date</h4></pre>
+    @foreach (var item in Model)
+    {
+        <pre><h4 class="names">@item.Id | @item.Name | @item.Course | @item.Date</h4></pre>
+        
+    }
+    </div>
+    <button id="button" onclick="location.href='https://localhost:44393/register';">>Back</button>
+</ul>
+

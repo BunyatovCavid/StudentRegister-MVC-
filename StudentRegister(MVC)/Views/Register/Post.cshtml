@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Post";
+}
+
+@model StudentRegister_MVC_.Dtoes.StudentDto
+
+<style> 
+    .header{
+        margin:auto;
+        margin-top:30px;
+        border-bottom-color:black;
+        border:solid;
+    }
+        #button{
+        background-color:snow;
+        border-color:black;
+        border:solid;
+    }
+</style>
+
+<form asp-action="Post" asp-controller="Register" method="post">
+   <div class="header">
+    <h3>New Student</h3>
+    </div>
+    <div class="main" >
+        <pre>
+        <input asp-for="Name" type="text" placeholder="Name"/>
+
+        <input asp-for="Age" type="number" placeholder="Age"/>
+
+        <input asp-for="Course" type="number" placeholder="Course"/>
+
+        <input asp-for="Date" type="datetime" placeholder="Date"/>
+        </pre>
+    </div>
+    <button id="button" onclick="location.href='https://localhost:44393/register/get';">>Gonder</button>
+    <button id="button" onclick="location.href='https://localhost:44393/register';">>Back</button>
+</form>
+
+
+
+

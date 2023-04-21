@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<style>
+        #button{
+        background-color:snow;
+        border-color:black;
+        border:solid;
+    }
+</style>
+
+
+<form asp-action="Delete" asp-controller="Register" method="post">
+    <input type="number" placeholder="id" name="id" />
+    <button id="button" onclick="location.href='https://localhost:44393/register/get=';">>Sil</button>
+    <button id="button" onclick="location.href='https://localhost:44393/register';">>Back</button>
+
+</form>
